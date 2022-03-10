@@ -1,0 +1,6 @@
+2022-03-09 10:50:39 INFO  AspectA:18 - List spring2.controller.BooksAController.getBooks()
+2022-03-09 11:11:59 INFO  AspectA:18 - List spring2.controller.BooksAController.getBooks()
+2022-03-09 11:33:39 INFO  AspectA:18 - List spring2.controller.BooksAController.getBooks()
+2022-03-09 11:34:52 INFO  AspectA:18 - List spring2.controller.BooksAController.getBooks()
+2022-03-09 11:36:07 INFO  AspectA:18 - List spring2.controller.BooksAController.getBooks()
+2022-03-09 17:16:48 INFO  AspectA:18 - List spring2.controller.BooksAController.getBooks()
