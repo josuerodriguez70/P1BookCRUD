@@ -36,7 +36,7 @@ public class BooksA {
     private int price;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "author_name")
+    @JoinColumn(name = "author_id")
     private AuthorsA author;
 
 
