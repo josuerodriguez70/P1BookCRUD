@@ -1,12 +1,22 @@
 package spring2.model;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+
+@JsonIdentityInfo(
+        //scope = AuthorsA.class,
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "author_id" //"author_id"
+)
 
 @Entity
 @Table(name="authors")
@@ -21,8 +31,11 @@ public class AuthorsA {
     @Column
     private String name;
 
-    /*@OneToMany(cascade = {CascadeType.ALL})
-    @JoinColumn(name="author_id")
-    private List<BooksA> books;*/
+    @Column
+    @OneToMany(mappedBy = "author", cascade = CascadeType.ALL,fetch = FetchType.EAGER) //,
+    //@JoinColumn(name="author_name") //"author_id"
+    private List<BooksA> books; //or public?
+    //private Collection<BooksA> books = new ArrayList<>();
+
 
 }

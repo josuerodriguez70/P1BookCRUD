@@ -20,7 +20,9 @@ public interface BooksARepository extends JpaRepository<BooksA, Integer> {
     BooksA findByTitle(String title);
 
     // update
-    //
+    @Modifying
+    @Query( value = "update books set books.price=:price where books.title=:title", nativeQuery = true)
+    void updatePrice(String title, int price);
 
 
     //delete

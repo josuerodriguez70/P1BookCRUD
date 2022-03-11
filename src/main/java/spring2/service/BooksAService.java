@@ -24,7 +24,7 @@ public class BooksAService {
     public BooksA saveBook(BooksA book){return bookRepository.save(book);}
 
     //update/patch method
-
+    public void updatePrice(BooksA book){bookRepository.updatePrice(book.getTitle(), book.getPrice());}
 
     public void deleteBook(BooksA book){bookRepository.myDelete(book.getTitle());}
 

@@ -25,7 +25,8 @@ public class BooksAController {
     @PostMapping
     public BooksA postBook(@RequestBody BooksA book){return bookService.saveBook(book);}
 
-    //@PatchMapping
+    @PatchMapping
+    public void updatePrice(@RequestBody BooksA book){bookService.updatePrice(book);}
 
 
     @DeleteMapping
