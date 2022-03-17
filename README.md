@@ -28,6 +28,8 @@ This project made use of an Azure Sql Database. If the user has their own Azure 
 or chooses to create their own, they can plug their credentials in the application.properties file,
 otherwise they can modify the application.properties file to suit their own web-based database needs.
 
+Postman app recommended to conduct Get, Post, Patch, and Delete requests.
+
 
 ## Contributors
 - Josue Rodriguez
