@@ -2,7 +2,7 @@
 ## Library Book CRUD Web API
 
 ## Overview
-- This is back-end REST Web API employing MVC Architecture that allows users to View, Add,
+- This is back-end RESTful Web API employing MVC Architecture that allows users to View, Add,
 Update, and Delete books and authors from a library's web-hosted database.
 
 ## Technologies
