@@ -1,19 +1,19 @@
 # P1BookCRUD
-## Library Book CRUD Application Demo
+## Library Book CRUD Web API
 
 ## Overview
-- This is back-end REST application employing an MVC Architecture that allows users to View, Add,
+- This is back-end REST Web API employing MVC Architecture that allows users to View, Add,
 Update, and Delete books and authors from a library's web-hosted database.
 
 ## Technologies
 - Java
 - Spring Boot
 - Spring AOP
+- Spring ORM
 - Azure SQL Database
 - Lombok
 - Log4j
 - Hibernate
-- Azure VM
 
 ## Features
 - View all books/authors in the database
